@@ -1,5 +1,4 @@
-
-    body {
+body {
 	margin: 0;
 	font-family: Arial, sans-serif;
 	background: #d6eff4;
@@ -50,4 +49,5 @@
 	color: white;
 	text-decoration: none;
 	display: inline-block;
+
 }
