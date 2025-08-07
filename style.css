@@ -1,75 +1,79 @@
+/* CSS Reset Sederhana */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Agar padding dan border masuk dalam width elemen */
+}
+
 body {
-	margin: 0;
-	font-family: Arial, sans-serif;
-	background: #d6eff4;
-}
-.navbar{
-	background: #212121;
-	margin: 0;
-	padding: 20px 30px;
-}
- 
-.logo{
-	font-size: 14pt;
-	font-weight: bold;
-	text-decoration: none;
-	color: white;
-}
- 
-.container{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
- 
-.tombol{
-	display: none;
-	color: white;
-	font-size: 14pt;			
-}
- 
-.tombol:hover{
-	cursor: pointer;
-}
- 
-.menu{
-	margin: 0;
-	display: flex;
-	list-style: none;
-	padding: 0;			
-}
- 
-.menu li{
-	padding-left: 0;
-	margin-right: 10px;
-}
- 
-.menu li a{
-	padding:10px;
-	color: white;
-	text-decoration: none;
-	display: inline-block;
-
+  font-family: sans-serif;
+  line-height: 1.6;
+  width: 1200px; /* Lebar body 1200px */
+  margin: 0 auto; /* Body menjadi rata tengah */
 }
 
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
+header {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
 }
 
-.my-float{
-	margin-top:16px;
+nav ul {
+  list-style: none;
+  margin-top: 20px;
+  text-align: center; /* Rata tengah menu di layar kecil */
 }
 
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
 
+main {
+  padding: 20px;
+}
 
+section {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #333333; /* Background footer #333333 */
+  color: #fff; /* Warna teks footer putih */
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive Design dengan Media Queries */
+@media (max-width: 768px) {
+  body {
+    width: 90%; /* Lebar body menjadi 90% dari lebar layar */
+  }
+
+  nav ul li {
+    display: block; /* Tampilan menu vertikal di layar kecil */
+    margin: 10px 0;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .container {
+    flex-direction: column; /* Item ditampilkan vertikal */
+  }
+
+  .item {
+    width: 100%; /* Item mengambil lebar penuh */
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
