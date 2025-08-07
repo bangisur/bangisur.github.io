@@ -8,7 +8,7 @@
 body {
   font-family: sans-serif;
   line-height: 1.6;
-  width: 1200px; /* Lebar body 1200px */
+  width: 600px; /* Lebar body 600px */
   margin: 0 auto; /* Body menjadi rata tengah */
 }
 
@@ -48,7 +48,7 @@ footer {
 }
 
 /* Responsive Design dengan Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   body {
     width: 90%; /* Lebar body menjadi 90% dari lebar layar */
   }
@@ -76,6 +76,7 @@ img {
   height: auto;
   display: block;
  }
+
 
 
 
